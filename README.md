@@ -1,17 +1,14 @@
-# onboarding_app
+# Exemplo de Onboarding em FLutter
 
 Exemplo de uma introdução do aplicativo.
 
-## Getting Started
+## Rodar o projeto
 
-This project is a starting point for a Flutter application.
+Clone o projeto
 
-A few resources to get you started if this is your first Flutter project:
+Rode o pubspec
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# onboarding-app" 
+## Interface
+
+

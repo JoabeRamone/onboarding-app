@@ -34,23 +34,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               CustomSlider(
                 imagem: 'assets/onboarding-image-1.png',
                 titulo: 'Sua Comida favorita',
-                texto:
-                    'Almoço, janta, cafézinho da manhã ou da tarde. A qual quer horário para atendimento.',
-                acaoBotao: 'CONTINUAR',
+                texto: 'Almoço, janta, cafézinho da manhã ou da tarde. A qual quer horário para atendimento.',
               ),
               CustomSlider(
                 imagem: 'assets/onboarding-image-2.png',
                 titulo: 'Você recebe no conforto de onde estiver',
-                texto:
-                    'Seu pedido é atendido pelo restaurante mais próximo, que leva tudo pra você.',
-                acaoBotao: 'CONTINUAR',
+                texto: 'Seu pedido é atendido pelo restaurante mais próximo, que leva tudo pra você.',
               ),
               CustomSlider(
                 imagem: 'assets/onboarding-image-3.png',
                 titulo: 'Melhores Chef’s',
                 texto:
                     'Chefs, dos quais a maioria vem de restaurantes com estrelas Michelin ou são vencedores de competições de prestígio e títulos.',
-                acaoBotao: 'CONTINUAR',
               ),
             ],
           ),
@@ -61,8 +56,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               children: [
                 CustomButton(
                   titulo: _currentPage == 2 ? 'QUERO CONHECER' : 'CONTINUAR',
-                  irParaPaginaInicial:
-                      _currentPage == 2 ? irParaPaginaInicial : proximoCard,
+                  irParaPaginaInicial: _currentPage == 2 ? irParaPaginaInicial : proximoCard,
                 ),
               ],
             ),
@@ -96,15 +90,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void irParaPaginaInicial() {
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => HomeScreen()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
 
     _setEstado();
   }
 
   void proximoCard() {
-    _pageController.nextPage(
-        duration: Duration(seconds: 1), curve: Curves.easeIn);
+    _pageController.nextPage(duration: Duration(seconds: 1), curve: Curves.easeIn);
   }
 
   _setEstado() async {
